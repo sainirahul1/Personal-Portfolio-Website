@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel portfolio website</title>
+    <link rel="stylesheet" href="style12.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+     <body>
+        <div id="header">
+                <section class="wrapper">
+                    <div id="header-stars"></div>
+                    <div id="header-stars2"></div>
+                    <div id="header-stars3"></div>
+                </section>
+                <!-- Your first page content -->         
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#connect">Connect</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i> 
+        </nav>
+        <div class="header-text">
+            <img src="images/professional-removebg-preview.png" alt="Profile Image" class="profile-pic">
+            <p>Front End Developer</p>
+            <h1>Hi, I'm <span>Saini Rahul</span><br>from Hyderabad<br>
+                <a href="https://www.linkedin.com/in/saini-rahul-b00072261/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sainirahul1?tab=repositories"target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+            </h1>
+              
+        </div>
+    </div>
+</div>
+<!--------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/see.png">
+        </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="rahul">Hey there! I'm a passionate web developer, problem solver, and AI enthusiast with a foundation in Data Structures & Algorithms and a keen interest in Artificial Intelligence & Machine Learning.
+
+                I love building interactive websites, optimizing algorithms, and exploring how AI can solve real-world problems. My focus is on writing clean, efficient code and continuously learning new technologies to enhance my skills.</p>
+        
+            <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Frontend Developer</span><br>Designing web app interfaces</li>
+                <li><span>Dsa</span><br>Moderate Data structures</li>
+                <li><span>Programming Languages</span><br>Java<br>C++<br>Python(Intermediate)</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Experience">
+            <ul>
+                <li><span>2025-current</span><br>AICTE internship on Human pose estimation using machine learning a joint csr initiative of Microsoft<br>2024(December)-2025(January)</br></li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>2020</span><br>SSC from Sai Siddhartha high school--<span>10Gpa</span></li>
+                <li><span>2022</span><br>Intermediate from Sri Chaitanya Junior Kalasala--<span>87.3%</span></li>
+                <li><span>2025</span><br>ongoing Engineering in Ace Engineering college--<span>8.29 cgpa</span></li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Certifications">
+            <ul>
+                <li><span>2020</span><br>SSC from Sai Siddhartha high school--10    Gpa</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-----------------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I'm Working On</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building modern, responsive websites using HTML, CSS, JavaScript, and React.js. Currently improving performance optimization and UI/UX design.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Data Structures & Algorithms (DSA)</h2>
+                <p>Practicing problem-solving,focusing on advanced algorithms, competitive programming, and efficient coding techniques.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Artificial Intelligence & Machine Learning</h2>
+                <p>Exploring AI and ML concepts, working on predictive models using Python, TensorFlow, and Scikit-learn, and applying ML to real-world problems.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------portfolio--------------->
+<div id="projects">
+<div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="work-list">
+        <div class="work">
+            <img class="chat" src="images/chatbot1.jpg">
+            <div class="layer">
+                <h3>Chat Bot using Nlp</h3>
+                <p>This chatbot takes user input, matches it with predefined rules provided, and responds to the user accordingly.</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img class="pose" src="images/pose.png">
+            <div class="layer">
+                <h3>Human pose Estimation</h3>
+                <p>The Model Helps to identify the different poses of humans using Machine Learning Algorithms</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img class="web"src="images/bulb.jpg">
+            <div class="layer">
+                <h3>webapp interfaces</h3>
+                <p>Desing and building professional and attractive web app interfaces</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#"class="btn">See More</a>
+</div>
+</div>
+<!--------------------------contact-------------->
+<div id="connect">
+    <div class="container">
+        <div class="row">
+            <div class="Connect-left">
+                <h1 class="sub-title"><i class="fa-solid fa-handshake"></i>Connect</h1>
+                <p><i class="fas fa-paper-plane"></i>sainirahul4148@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9393479928</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/saini-rahul-b00072261/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/SAINI RAHUL_College Graduate Resume – 02 (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="Connect-Right">
+            <form name="submit-to-google-sheet">
+                <form>
+                    <div class="input-container">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                
+                    <div class="input-container">
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                
+                    <div class="input-container">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                
+                    <button type="submit" class="btn btn2">Submit</button>
+                
+                    <span id="msg"></span>
+                </form>
+                
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Designed by Rahul<i class="fa-solid fa-globe"></i></p>
+</div>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBSL01u3kGqZ__w0-LRBR1XZCTdb10uHNd9cLILjLvpMz5LiNjaXfrqJIictNVFzos/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully✅"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
